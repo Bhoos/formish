@@ -1,0 +1,9 @@
+{
+  "name": "formish",
+  "version": "0.1.0",
+  "description": "Form wtih hooks",
+  "main": "dist/index.js",
+  "repository": "git@github.com:bhoos/formish",
+  "author": "Ranjan Shrestha <ranjan@sharingapples.com>",
+  "license": "MIT"
+}
