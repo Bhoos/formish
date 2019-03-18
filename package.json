@@ -1,6 +1,6 @@
 {
   "name": "formish",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Form wtih hooks",
   "main": "dist/index.js",
   "react-native": "src/index.js",
