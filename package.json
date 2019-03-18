@@ -3,6 +3,11 @@
   "version": "0.1.0",
   "description": "Form wtih hooks",
   "main": "dist/index.js",
+  "react-natve": "src/index.js",
+  "peerDependencies": {
+    "react": ">16.8",
+    "react-native": ">=0.59"
+  },
   "repository": "git@github.com:bhoos/formish",
   "author": "Ranjan Shrestha <ranjan@sharingapples.com>",
   "license": "MIT"
