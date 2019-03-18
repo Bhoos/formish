@@ -54,13 +54,15 @@ class Editor extends Component<Props, State> {
     this.parsers = {};
   }
 
-  shouldComponentUpdate(nextProps, nextState) {
-    const nextOwner = getOwner(nextProps, nextState);
-    const owner = getOwner(this.props, this.state);
-    if (owner === nextOwner) return false;
-    if (owner === null || nextOwner === null) return true;
-    return nextOwner.value !== owner.value || nextOwner.onChange !== owner.onChange;
-  }
+  // shouldComponentUpdate(nextProps, nextState) {
+    // TODO: Figure out an optimized way to update including the children
+    // The below mechansim will not update the children component when children props are changed
+    // const nextOwner = getOwner(nextProps, nextState);
+    // const owner = getOwner(this.props, this.state);
+    // if (owner === nextOwner) return false;
+    // if (owner === null || nextOwner === null) return true;
+    // return nextOwner.value !== owner.value || nextOwner.onChange !== owner.onChange;
+  // }
 
   edit(owner: { value: {}, onChange: ({}) => void }) {
     // eslint-disable-next-line react/destructuring-assignment
